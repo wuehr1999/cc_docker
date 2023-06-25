@@ -7,4 +7,4 @@ Docker enviroment for CologneChip GateMate FPGA. The following toolchain blocks 
 
 For building the enviroment simply run ```./build_docker.sh```.
 
-The enviroment can be started with ```./run_docker.sh```
+The enviroment can be started with ```./run_docker.sh``` Then the ``ẁorkspace``` folder will be mounted to ```/workspace```.
