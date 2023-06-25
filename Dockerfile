@@ -26,7 +26,7 @@ RUN apt install -yq software-properties-common
 RUN add-apt-repository universe
 
 RUN apt update -yq
-RUN apt install -yq curl wget bash git python3 python3-pip build-essential clang bison flex libreadline-dev gawk  tcl-dev libffi-dev graphviz xdot pkg-config libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev gnat libftdi1-2 libftdi1-dev libhidapi-hidraw0 libhidapi-dev libudev-dev cmake make g++ unzip
+RUN apt install -yq curl wget bash git python3 python3-pip build-essential clang bison flex libreadline-dev gawk  tcl-dev libffi-dev graphviz xdot pkg-config libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev gnat libftdi1-2 libftdi1-dev libhidapi-hidraw0 libhidapi-dev libudev-dev cmake make g++ unzip p7zip-full
 
 RUN cd ${WORKDIR} \
   && git clone https://github.com/YosysHQ/yosys.git \
@@ -59,4 +59,6 @@ RUN cd ${WORKDIR} \
 
 RUN cd ${WORKDIR} \
   && wget -c https://colognechip.com/downloads/cc-toolchain-linux.zip \
-  && unzip cc-toolchain-linux.zip
+  && 7z x cc-toolchain-linux.zip \
+  && tar xf cc-toolchain-linux \
+  && cp -r cc-toolchain-linux/bin/p_r /usr/bin
