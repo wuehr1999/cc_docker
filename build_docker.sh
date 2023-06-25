@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t cc .
+docker build -t nacht_am_rhein .
