@@ -22,7 +22,7 @@ docker run \
         --env="XAUTHORITY=$XAUTH" \
         --volume="$XAUTH:$XAUTH" \
         -it --rm \
-        -v ${PWD}:${PWD} \
+        -v ${PWD}:build \
         -v /dev:/dev \
         --network host \
         cc /bin/bash
