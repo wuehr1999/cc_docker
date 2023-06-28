@@ -6,7 +6,7 @@ Docker enviroment for CologneChip GateMate FPGA. The following toolchain blocks 
 - [yosys](https://github.com/YosysHQ/yosys.git) with [ghdl](https://github.com/ghdl/ghdl.git) [plugin](https://github.com/ghdl/ghdl-yosys-plugin.git)
 - [Cologne Chip place and route](https://colognechip.com/downloads/cc-toolchain-linux.zip)
 - [OpenFPGALoader](https://github.com/trabucayre/openFPGALoader.git)
-- [svgnetlist](https://github.com/nturley/netlistsvg)
+- [netlistsvg](https://github.com/nturley/netlistsvg)
 
 For building the enviroment simply run ```./build_docker.sh```.
 
