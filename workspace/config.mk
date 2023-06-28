@@ -47,25 +47,15 @@ spi:
 spi-flash:
 	$(OFL) $(OFLFLAGS) -b gatemate_evb_spi -f --verify $(TOP)_00.cfg
 
+svgnetlist:
+	@for svgtop in ${SVGNETLISTS}; do \
+		yosys -p "prep -top $${svgtop}; write_json svg_netlist/$${svgtop}.json" src/*.v; \
+		netlistsvg svg_netlist/$${svgtop}.json -o svg_netlist/$${svgtop}.svg; \
+		yosys -p "prep -top $${svgtop} -flatten; write_json svg_netlist/flat_$${svgtop}.json" src/*.v; \
+		netlistsvg svg_netlist/flat_$${svgtop}.json -o svg_netlist/flat_$${svgtop}.svg; \
+	done
+
 all: synth impl jtag
-
-## verilog simulation targets
-vlog_sim.vvp:
-	$(IVL) $(IVLFLAGS) -o sim/$@ $(VLOG_SRC) sim/$(TOP)_tb.v
-
-synth_sim.vvp:
-	$(IVL) $(IVLFLAGS) -o sim/$@ net/$(TOP)_synth.v sim/$(TOP)_tb.v $(CELLS_SYNTH)
-
-impl_sim.vvp:
-	$(IVL) $(IVLFLAGS) -o sim/$@ $(TOP)_00.v sim/$(TOP)_tb.v $(CELLS_IMPL)
-
-.PHONY: %sim %sim.vvp
-%sim: %sim.vvp
-	$(VVP) -N sim/$< -lx2
-	@$(RM) sim/$^
-
-wave:
-	$(GTKW) sim/$(TOP)_tb.vcd sim/config.gtkw
 
 clean:
 	$(RM) log/*.log
@@ -88,6 +78,4 @@ clean:
 	$(RM) *.pin
 	$(RM) *.cfg*
 	$(RM) *.cdf
-	$(RM) sim/*.vcd
-	$(RM) sim/*.vvp
-	$(RM) sim/*.gtkw
+	$(RM) svg_netlist/*

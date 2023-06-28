@@ -62,3 +62,8 @@ RUN cd ${WORKDIR} \
   && 7z x cc-toolchain-linux.zip \
   && tar xf cc-toolchain-linux \
   && cp -r cc-toolchain-linux/bin/p_r /usr/bin
+
+RUN apt install -yq npm
+RUN npm install -g netlistsvg
+
+RUN apt install -yq gtkwave
