@@ -1,7 +1,7 @@
 [![docker build](https://github.com/wuehr1999/nacht_am_rhein/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/wuehr1999/nacht_am_rhein/actions/workflows/docker-publish.yml)
 
 # nacht_am_rhein
-Docker enviroment for CologneChip GateMate FPGA. The following toolchain blocks are combined in a docker enviroment:
+Docker enviroment for CologneChip GateMate FPGA. The following toolchain blocks are currently integrated:
 
 - [yosys](https://github.com/YosysHQ/yosys.git) with [ghdl](https://github.com/ghdl/ghdl.git) [plugin](https://github.com/ghdl/ghdl-yosys-plugin.git)
 - [Cologne Chip place and route](https://colognechip.com/downloads/cc-toolchain-linux.zip)
