@@ -1,3 +1,5 @@
+[![docker build](https://github.com/wuehr1999/nacht_am_rhein/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/wuehr1999/nacht_am_rhein/actions/workflows/docker-publish.yml)
+
 # nacht_am_rhein
 Docker enviroment for CologneChip GateMate FPGA. The following toolchain blocks are combined in a docker enviroment:
 
