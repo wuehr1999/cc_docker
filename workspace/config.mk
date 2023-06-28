@@ -5,7 +5,7 @@ EXE =
 ## toolchain
 YOSYS = yosys$(EXE)
 PR    = /usr/bin/p_r/p_r$(EXE)
-OFL   = openFPGALoader/openFPGALoader$(EXE)
+OFL   = openFPGALoader$(EXE)
 
 GTKW = gtkwave
 IVL = iverilog

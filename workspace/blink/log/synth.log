@@ -744,6 +744,6 @@ Finding unused cells or wires in module \blink..
 2.52.2. Executing DEMUXMAP pass.
 Dumping module `\blink'.
 
-End of script. Logfile hash: c9999a90df, CPU: user 0.17s system 0.01s, MEM: 25.81 MB peak
+End of script. Logfile hash: c9999a90df, CPU: user 0.15s system 0.01s, MEM: 26.03 MB peak
 Yosys 0.30+38 (git sha1 2310a0ea9, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 31% 1x abc (0 sec), 30% 13x read_verilog (0 sec), ...
+Time spent: 33% 1x abc (0 sec), 26% 13x read_verilog (0 sec), ...

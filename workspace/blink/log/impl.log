@@ -68,7 +68,7 @@ SAVE_NET
 
 Conversion finished!
 ASCII netlist generated: blink_x_convert.prn
-Time (s):       0.214
+Time (s):       0.211
 
 Read blink.net
 
@@ -109,7 +109,7 @@ WARNING: still unplaced components existing
 Centerpoint:  x: 79.25 y: 121.75
 
 
-Time (s):       0.328
+Time (s):       0.327
 
 Netlength (initial): 5845.57
 
@@ -194,7 +194,7 @@ Quadratisches Placement: TRUE
    78  Netlength: 120.11   diff(%): 0.48862   1
    79  Netlength: 119.55   diff(%): 0.46823   2
 
-Time (s):       0.339
+Time (s):       0.338
 
 CPE Component Statistics:
          AND        28        51%
@@ -209,13 +209,13 @@ Sum of SEQ:         28
 
 Sum of all:         82
 
-Time (s):       1.169
+Time (s):       1.155
 
 1 Adder Chains inserted
 
 Netlength after adder insertion: 1051.00
 
-Time (s):       1.203
+Time (s):       1.189
 
 CPE input statistics:
 Fanin:  1 count:      1   CPE %:  3.6
@@ -234,7 +234,7 @@ Number of Bridges to insert: 0
 
 Netlength after Bridge Insert:       1010
 
-Time (s):       2.587
+Time (s):       2.568
 
 Preroute fixed connections
 .
@@ -255,7 +255,7 @@ FI:      5 count:     13   41.9 %      connect count:     65   58.0 %  cumulated
 Number of Inputs:    31
 Average FanIn:     3,61
 
-Time (s):       2.828
+Time (s):       2.810
 .......
 
 Route statistics:   MUX/Con: 0.87   not routed: 15   Ripups: 0
@@ -269,14 +269,14 @@ mode:2
 Route statistics:   MUX/Con: 1.03   not routed: 0   Ripups: 0
 mode:3
 
-Time (s):       2.858
+Time (s):       2.841
 
-Time (s):       2.917
+Time (s):       2.900
 
 
 SDF Generation
 
-Time (s):       2.960
+Time (s):       2.943
 
 Static Timing Analysis
 Longest Path from Q of Component 15_1 to D-Input of Component 14/4 Delay: 3559 ps
@@ -291,18 +291,18 @@ Path details:
 15/14 x79y121 - 14/14 x79y122     Clk-Skew                      route-del:   -64 ps                       path-del:  3559 ps
 
 
-Time (s):       2.961
+Time (s):       2.944
 
 
 
 
 
-Time (s):       2.961
+Time (s):       2.944
 
 
 SDF Generation
 
-Time (s):       3.014
+Time (s):       2.997
 
 Static Timing Analysis
 
@@ -335,7 +335,7 @@ Longest Path from Input via Input-Buffer 85 to D-Input of Component 23 Delay: 35
 Longest Path from Input via Input-Buffer 85 to D-Input of Component 21 Delay: 3507 ps
 
 
-Time (s):       3.016
+Time (s):       3.000
 
 Utilization Report
 
@@ -380,7 +380,7 @@ Utilization Report
 
 Verilog Netlist Generation
 
-before generate_netlist Time (s):       3.190
+before generate_netlist Time (s):       3.175
 
 
 
@@ -388,12 +388,12 @@ before generate_netlist Time (s):       3.190
 
 
 
-Time (s):       3.223
+Time (s):       3.209
 
 Generate SDF for fast simulation
 
 CFG-File Generation
 
-Time (s):       3.470
+Time (s):       3.454
 
 End of Place & Route

@@ -1,7 +1,7 @@
 //  (c) Cologne Chip AG
 //  FPGA netlist writer     Version: 4.2 (1 Apr 2023)
 //  Compile Time: 2023-06-25 19:33:48
-//  Program Run:  2023-06-28 21:40:17
+//  Program Run:  2023-06-28 21:41:04
 //  Program Call: /usr/bin/p_r/p_r -i net/blink_synth.v -o blink -ccf src/blink.ccf 
 //  File Type:    internal Format
 
