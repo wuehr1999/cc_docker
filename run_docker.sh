@@ -25,4 +25,4 @@ docker run \
         -v ${PWD}/workspace:/workspace \
         -v /dev:/dev \
         --network host \
-        nach_am_rhein /bin/bash
+        nacht_am_rhein /bin/bash
