@@ -55,7 +55,7 @@ svgnetlist:
 		netlistsvg svg_netlist/flat_$${svgtop}.json -o svg_netlist/flat_$${svgtop}.svg; \
 	done
 
-all: synth impl jtag
+all: synth svgnetlist impl jtag
 
 clean:
 	$(RM) log/*.log
