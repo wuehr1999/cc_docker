@@ -67,3 +67,24 @@ RUN apt install -yq npm
 RUN npm install -g netlistsvg
 
 RUN apt install -yq gtkwave
+
+RUN apt install -yq npm
+RUN npm install -g netlistsvg
+
+RUN apt install -yq gtkwave
+RUN apt install -yq autoconf help2man perl g++ libfl2 libfl-dev zlibc zlib1g zlib1g-dev ccache libgoogle-perftools-dev numactl perl-doc
+
+RUN cd ${WORKDIR} \
+  && git clone https://github.com/verilator/verilator \
+  && cd verilator \
+  && autoconf \
+  && ./configure \
+  && make -j $(nproc) \
+  && make install
+
+RUN apt install -yq python3-tk
+
+RUN cd ${WORKDIR} \
+  && git clone https://github.com/henryeherman/pyverilator.git \
+  && cd pyverilator \
+  && pip3 install .
